@@ -13,7 +13,7 @@
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/list">삽니다</a></li>
-        <li><a href="#">팝니다</a></li>
+        <li><a href="/list2">팝니다</a></li>
         <li><a href="#">자유게시판</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -27,11 +27,11 @@
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="/list">삽니다</a></p>
-      <p><a href="#">팝니다</a></p>
+      <p><a href="/list2">팝니다</a></p>
       <p><a href="#">자유게시판</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>게시판 목록</h1>
+      <h1>삽니다 목록</h1>     <h3></h33><a href="/write_view">글쓰러 가기</a></h3>
         <% @every_post.each do |p|%>
         <a href="/read/<%=p.id%>">제목 : <%= p.title %></a> <br>
         작성자 : <%= p.writer %> <br>
@@ -52,7 +52,7 @@
 </div>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>contact us: 01054581468</p>
 </footer>
 
 

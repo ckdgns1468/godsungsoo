@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -27,29 +26,18 @@
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="/list">삽니다</a></p>
-      <p><a href="list2">팝니다</a></p>
+      <p><a href="/list2">팝니다</a></p>
       <p><a href="#">자유게시판</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      
-<div class="container">     
-    <h1>게시판입니다.</h1> 
-    <form action="/write" method="post"> 
-        <div class="form-group">   
-            <label for="exampleInputEmail1">글 제목</label>    
-            <input name = "title" type="text" class="form-control" id="exampleInputEmail1" placeholder="제목을 써 주세요.">    
-        </div>      
-        <div class="form-group">   
-            <label for="exampleInputPassword1">글 내용</label>   
-            <textarea name="content" class="form-control" id="exampleInputPassword1" rows="5" id="comment" placeholder="글을 입력해주세요."></textarea>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">작성자</label>    
-            <input name = "writer" type="text" class="form-control" id="exampleInputEmail1" placeholder="작성자"> 
-        </div>
-        <button type="submit" class="btn btn-default">게시</button> 
-    </form>
-</div>
+      <h1>팝니다 목록</h1>     <h3></h33><a href="/write_view2">글쓰러 가기</a></h3>
+        <% @every_post2.each do |p|%>
+        <a href="/read2/<%=p.id%>">제목 : <%= p.title2 %></a> <br>
+        작성자 : <%= p.writer2 %> <br>
+        시간 : <%= p.created_at %><br>
+        <hr>
+        <% end %>
+     <h1><a href="/write_view2">글쓰러 가기</a></h1>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
@@ -63,6 +51,8 @@
 </div>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>contact us: 01054581468</p>
 </footer>
+
+
 
